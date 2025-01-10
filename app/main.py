@@ -40,11 +40,11 @@ haarcascade_path = '../data/haarcascade_frontalface_default.xml'
 face_cascade = cv2.CascadeClassifier(haarcascade_path)
 
 # Load logo
-logo_path = '../data/Rewards_Logo_2.jpg'  
+logo_path = '../data/insco-white-halo.png'  
 logo = cv2.imread(logo_path, cv2.IMREAD_UNCHANGED)
 
 # Resize the logo
-logo = cv2.resize(logo, (100, 85))  # width / height
+logo = cv2.resize(logo, (100, 100)) # width / height
 
 # Separate alpha channel (if the logo has transparency)
 if logo.shape[2] == 4:
